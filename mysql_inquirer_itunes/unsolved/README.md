@@ -1,11 +1,8 @@
 # iTunes Application
 
-<h2>Goal</h2>
-
 Develop a command line tool which stores users information and let's them buy and view their music using Node, MySQL & Inquirer.
 
-<h2>Assignment</h2>
-
+## Easier Assignment
 * Create a database called itunes.
 
 * Have 3 tables:
@@ -28,8 +25,7 @@ Develop a command line tool which stores users information and let's them buy an
 	* Check the songs that they have
 		* Then get their songs from the database
 
-<h2>Bonus</h2>
-
+## Difficult Assignment
 * Create a bank table:
 	* id, balance, user_id
 * Every time a user account is created, a bank record is created for that user
