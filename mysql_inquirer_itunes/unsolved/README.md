@@ -40,3 +40,4 @@ Develop a command line tool which stores users information and let's them buy an
 3. Return Errors for:
 	* If user forgets to input field for when they sign up
 	* if username already exists in the database when they sign up
+4. When a user is choosing to buy a song, only populate with the songs list with song that they have 'NOT' bought.
