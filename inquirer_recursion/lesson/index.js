@@ -1,6 +1,9 @@
 /*
   - prompt the user if they would like to exit inquirer or not,
   - if not, then recursion
+
+  - recursion is calling the same function within the function itself
+    in order to run the function again
 */
 
 const inquirer = require("inquirer");
@@ -22,6 +25,7 @@ function runFirstApp(){
 
        If the user chooses "Keep Going", then inquirer will keep running
       */
+      console.log("You chose to keep going, so I shall keep going!")
       runFirstApp()
     } else {
       /*

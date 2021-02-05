@@ -13,7 +13,7 @@ function getConsumerBalanceAndUpdate(){
   databaseConnection.query(getConsumerQuery, function(err, data){
     const consumer = data[0];
     const purchasedBreakfast = 20;
-    const newBalance = data[0].balance - purchasedBreakfast;
+    const newBalance = consumer.balance - purchasedBreakfast;
     /* Updating the consumer balance after purchase */
     const updateConsumerBalanceQuery = "UPDATE consumers SET balance=" + newBalance + " WHERE id=" + consumer.id;
     databaseConnection.query(updateConsumerBalanceQuery, function(err, res){
