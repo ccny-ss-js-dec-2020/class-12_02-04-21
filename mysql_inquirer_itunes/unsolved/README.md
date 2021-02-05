@@ -26,14 +26,17 @@ Develop a command line tool which stores users information and let's them buy an
 		* Then get their songs from the database
 
 ## Difficult Assignment
-* Create a bank table:
-	* id, balance, user_id
-* Every time a user account is created, a bank record is created for that user
-* Add a column to your songs table called 'amount' which will be an INT and give each song a price with a default value of 3
-* When the user adds a song, have it deduce the amount that the song is priced at from the user's balance in the bank table.
-* Add a "View Your Balance" option to the inquirer prompt
-	* This should show the user's balance in the bank
-
-* Use recursion to:
+* 1. Add a bank to the functionality
+	* Create a bank table:
+		* id, balance, user_id
+	* Every time a user account is created, a bank record is created for that user
+	* Add a column to your songs table called 'amount' which will be an INT and give each song a price with a default value of 3
+	* When the user adds a song, have it deduce the amount that the song is priced at from the user's balance in the bank table.
+	* Add a "View Your Balance" option to the inquirer prompt
+		* This should show the user's balance in the bank
+* 2. Use recursion to:
 	* Bring the app back to the sign up/sign in prompt if the username or password is incorrect
 	* Bring the app back to the user options prompt after a transaction is done
+* 3. Return Errors for:
+	* If user forgets to input field for when they sign up
+	* if username already exists in the database when they sign up
