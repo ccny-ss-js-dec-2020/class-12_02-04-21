@@ -12,18 +12,18 @@ Develop a command line tool which stores users information and let's them buy an
 		* Columns: id, name, username, password
 	* A pivot table which stores what songs people have bought
 		* Columns: id, song_id, user_id
-* Pre-populate a songs table.
-* Start off with Inquirer: This is where you will create your username if it does not exist in the database
-* Inquirer should prompt: Sign Up/Sign in
-* The sign in should check username and password.
-* If the username is not in the database, then you can tell the client to sign up and close the connection/inquirer.
-* If the username is in the database, then prompt them to enter their password.
-* If the password matches the user's account, then prompt them either:
-	* If they would like to add a song
-		* Then have it prompt what songs are available
-	  * Ask them what song they would like to add
-	* Check the songs that they have
-		* Then get their songs from the database
+* Pre-populate a songs table as per the sql files attached.
+* Inquirer should prompt a choice for the user to "Sign Up" or "Sign in"
+* If the user chooses to "Sign In"
+	* Check the input username and password against the database.
+	* If the username is not in the database, then you can tell the client to sign up and close the connection/inquirer.
+	* If the username is in the database, then prompt the user to enter their password.
+	* If the password matches the user's account, then prompt them the choices to either:
+		* Add a song
+			* Then have it prompt what songs are available
+		  * Ask them what song they would like to add
+		* View the songs that they have
+			* Then get their songs from the database
 
 ## Difficult Assignment
 1. Add a bank to the functionality
